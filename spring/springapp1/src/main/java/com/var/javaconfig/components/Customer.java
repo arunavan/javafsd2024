@@ -1,8 +1,10 @@
 package com.var.javaconfig.components;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component  //singleton
+@Scope("singleton")
 public class Customer {
 	
 	String name;
